@@ -1,16 +1,5 @@
-.booking-form-banner {
-  background-color: #495e57;
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .booking-page-container {
-  background-color: #e5e5e5;
+  background-color: #495e57; /* Match background color of main page */
   font-family: 'Karla', sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,7 +11,7 @@
 
 .booking-page-heading {
   font-size: 64px;
-  color: #ffffff;
+  color: #ffff00; /* Yellow text color for heading */
   margin-bottom: 30px;
 }
 
@@ -35,7 +24,7 @@
 }
 
 .form-field-label {
-  color: #000000;
+  color: #ffff00; /* Yellow label text color */
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -47,6 +36,8 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
+  background-color: #fff; /* White background for input fields */
+  color: #000; /* Black text color for input fields */
 }
 
 .error-message {
@@ -60,8 +51,8 @@
 }
 
 .submit-button {
-  background-color: #1e40af;
-  color: #ffffff;
+  background-color: #1e40af; /* Match button color of main page */
+  color: #ffffff; /* White text color for button */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -69,28 +60,7 @@
 }
 
 .submit-button.disabled {
-  background-color: lightgrey ;
+  background-color: lightgrey; /* Match disabled button color of main page */
   color: black;
   cursor: not-allowed;
-}
-
-.calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
-  gap: 5px; /* Gap between grid items */
-}
-
-.day {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px; /* Adjust height as needed */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
 }
