@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import { Button, Img, Text } from "components";
 
 const BookingPagePage = () => {
@@ -39,21 +39,24 @@ const BookingPagePage = () => {
           No of Pax
         </Text>
         <div className="flex flex-col font-abel items-end mb-[109px] md:ml-[0] ml-[194px] mt-[329px] pl-[410px] md:px-5 w-[66%] md:w-full">
-          <Button
-            className="cursor-pointer flex items-center justify-center min-w-[239px] rounded-[10px]"
-            leftIcon={
-              <Img
-                className="mb-px mr-2.5"
-                src="images/img_save.svg"
-                alt="save"
-              />
-            }
-            color="light_blue_A700_26"
-          >
-            <div className="text-[17px] text-center tracking-[-0.41px]">
-              Submit
-            </div>
-          </Button>
+        <Link to="/">
+  <Button
+    className="cursor-pointer flex items-center justify-center min-w-[239px] rounded-[10px]"
+    leftIcon={
+      <Img
+        className="mb-px mr-2.5"
+        src="images/img_save.svg"
+        alt="save"
+      />
+    }
+    color="light_blue_A700_26"
+  >
+    <div className="text-[17px] text-center tracking-[-0.41px]">
+      Submit
+    </div>
+  </Button>
+</Link>
+
         </div>
       </div>
     </>

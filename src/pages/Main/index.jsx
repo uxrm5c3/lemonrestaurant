@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import { Button, Img, List, Text } from "components";
 import MainCard from "components/MainCard";
 import MainLinks from "components/MainLinks";
@@ -176,12 +176,14 @@ const MainPage = () => {
                 We are a family owned Mediterranean restaurant focused on
                 traditional recipes served with a modern twist
               </Text>
+              <Link to="/bookingpage">
               <Button
-                className="cursor-pointer leading-[normal] min-w-[200px] mt-[66px] rounded-[30px] text-center text-lg"
-                shape="round"
-              >
-                Reserve a Table
-              </Button>
+                    className="cursor-pointer font-roboto leading-[normal] min-w-[187px] text-center text-lg"
+                    shape="round"
+  >
+                   Make Reservation
+               </Button>
+            </Link>
             </div>
             <Img
               className="absolute h-[325px] inset-y-[0] my-auto object-cover right-[10%] w-[38%]"
