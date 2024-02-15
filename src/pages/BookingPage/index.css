@@ -1,103 +1,96 @@
-    /* index.css */
-    .booking-form-banner {
-      background-color: #495E57; /* Green color */
-      width: 80%;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      margin-top: 50px; /* Adjust as needed */
-      margin-bottom: 50px; /* Adjust as needed */
-    }
-    
-    .booking-form-banner-text {
-      color: white;
-      font-size: 24px;
-    }
-    
-    
+.booking-form-banner {
+  background-color: #495e57;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .booking-page-container {
   background-color: #e5e5e5;
   font-family: 'Karla', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: auto;
-  padding: 7px;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
 }
-
 
 .booking-page-heading {
-  margin-left: 196px;
-  font-size: 64px; /* Updated font size to 64px */
-  color: #FFFFFF;
+  font-size: 64px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
-
 
 .form-field-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: 194px;
-  margin-top: 98px;
-  padding: 0px 5px;
-  width: 410px;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
 .form-field-label {
   color: #000000;
-  font-size: xl;
-  width: auto;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .input-field {
   height: 40px;
-}
-
-.form-submit-button-container {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Abel', sans-serif;
-  align-items: flex-end;
-  margin-bottom: 109px;
-  margin-left: 194px;
-  margin-top: 329px;
-  padding-left: 410px;
-  padding-right: 5px;
-  width: 66%;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .error-message {
   color: red;
+  margin-top: 5px;
+  display: none;
 }
 
 .input-field:focus {
   border-color: red;
 }
 
-/* Update color-adjust to print-color-adjust */
-@supports ((-webkit-print-color-adjust: exact) or (color-adjust: exact)) {
-  .form-submit-button {
-    /* Your default button styles */
-  }
-
-  .form-submit-button.enabled {
-    background-color: #1e40af; /* Dark blue */
-    color: #ffffff; /* White text */
-  }
-
-  .form-submit-button.disabled {
-    background-color: #F4CE14; /* Gray */
-    color: #F4CE14; /* Dark gray text */
-  }
+.submit-button {
+  background-color: #1e40af;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.txtMarzakiMedium64 {
-    font-family: 'Marzaki', sans-serif;
-    font-size: 64px;
-  }
-  
+.submit-button.disabled {
+  background-color: lightgrey ;
+  color: black;
+  cursor: not-allowed;
+}
 
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+  gap: 5px; /* Gap between grid items */
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+}
