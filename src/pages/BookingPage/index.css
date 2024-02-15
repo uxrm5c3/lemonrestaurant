@@ -1,0 +1,103 @@
+    /* index.css */
+    .booking-form-banner {
+      background-color: #495E57; /* Green color */
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 50px; /* Adjust as needed */
+      margin-bottom: 50px; /* Adjust as needed */
+    }
+    
+    .booking-form-banner-text {
+      color: white;
+      font-size: 24px;
+    }
+    
+    
+.booking-page-container {
+  background-color: #e5e5e5;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+  padding: 7px;
+  width: 100%;
+}
+
+
+.booking-page-heading {
+  margin-left: 196px;
+  font-size: 64px; /* Updated font size to 64px */
+  color: #FFFFFF;
+}
+
+
+.form-field-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 194px;
+  margin-top: 98px;
+  padding: 0px 5px;
+  width: 410px;
+}
+
+.form-field-label {
+  color: #000000;
+  font-size: xl;
+  width: auto;
+}
+
+.input-field {
+  height: 40px;
+}
+
+.form-submit-button-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Abel', sans-serif;
+  align-items: flex-end;
+  margin-bottom: 109px;
+  margin-left: 194px;
+  margin-top: 329px;
+  padding-left: 410px;
+  padding-right: 5px;
+  width: 66%;
+}
+
+.error-message {
+  color: red;
+}
+
+.input-field:focus {
+  border-color: red;
+}
+
+/* Update color-adjust to print-color-adjust */
+@supports ((-webkit-print-color-adjust: exact) or (color-adjust: exact)) {
+  .form-submit-button {
+    /* Your default button styles */
+  }
+
+  .form-submit-button.enabled {
+    background-color: #1e40af; /* Dark blue */
+    color: #ffffff; /* White text */
+  }
+
+  .form-submit-button.disabled {
+    background-color: #F4CE14; /* Gray */
+    color: #F4CE14; /* Dark gray text */
+  }
+}
+
+.txtMarzakiMedium64 {
+    font-family: 'Marzaki', sans-serif;
+    font-size: 64px;
+  }
+  
+
